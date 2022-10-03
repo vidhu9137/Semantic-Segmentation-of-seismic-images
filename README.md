@@ -3,3 +3,4 @@ Using U-net to semantically segment the pixels that corresponds to salt from the
 The dataset has been taken from Kaggle that contains 4000 seismic images and their masks (which shows regions of salt as white and remaining as black).
 U-net model is trained on 90% of dataset and it predicted for remaining 10% of images. Owing to large test size of images, results for some of them are displayed.
 During training, val_loss and accuracy is calculated to make sure that model doesn't underfit or overfit. 
+Model is built as a module in a separate .py file and is imported in the main .ipynb file to make overall code systematic.
